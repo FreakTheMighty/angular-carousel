@@ -139,7 +139,7 @@
                                         newValue = 0;
                                         updateParentIndex(newValue);
                                     }
-                                    goToSlide(newValue, animOnIndexChange);
+                                    goToSlide(newValue, animOnIndexChange && newValue!==oldValue);
                                 }
                             });
                             isIndexBound = true;
