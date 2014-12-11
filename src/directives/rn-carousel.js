@@ -179,9 +179,9 @@
                        // container.css('width', 'auto');
                         var slides = carousel.children();
                         if (slides.length === 0) {
-                            containerWidth = carousel[0].getBoundingClientRect().width;
+                            containerWidth = carousel.width();
                         } else {
-                            containerWidth = slides[0].getBoundingClientRect().width;
+                            containerWidth = slides.width();
                         }
                         // console.log('getCarouselWidth', containerWidth);
                         return containerWidth;
